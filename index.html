@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Titanic Survival Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Titanic Survival Predictor</h2>
+
+    <label>Passenger Class</label>
+    <select id="pclass">
+        <option value="1">1st Class</option>
+        <option value="2">2nd Class</option>
+        <option value="3" selected>3rd Class</option>
+    </select>
+
+    <label>Sex</label>
+    <select id="sex">
+        <option value="0">Male</option>
+        <option value="1">Female</option>
+    </select>
+
+    <label>Age</label>
+    <input type="number" id="age" value="26">
+
+    <label>Siblings / Spouses Aboard</label>
+    <input type="number" id="sibsp" value="0">
+
+    <label>Parents / Children Aboard</label>
+    <input type="number" id="parch" value="0">
+
+    <label>Fare</label>
+    <input type="number" id="fare" value="7.925" step="0.01">
+
+    <button onclick="predict()">Predict</button>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
